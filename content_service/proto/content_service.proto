@@ -54,7 +54,7 @@ message LoadCommentsResponse {
 }
 
 service ContentService {
-  rpc LoadTasks (LoadCommentsRequest) returns (LoadCommentsResponse);
-  rpc LoadProfile (LoadCommentsRequest) returns (LoadCommentsResponse);
+  rpc LoadTasks (LoadTasksRequest) returns (LoadTasksResponse);
+  rpc LoadProfile (LoadProfileRequest) returns (LoadProfileResponse);
   rpc LoadComments (LoadCommentsRequest) returns (LoadCommentsResponse);
 }
